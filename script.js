@@ -1,3 +1,4 @@
+//Evelīna Frīdenberga - Tomaša
 const nameV = document.querySelector("#name");
 const surnameV = document.querySelector("#surname");
 const numberV = document.querySelector("#number");
