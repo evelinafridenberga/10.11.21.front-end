@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  height: 10vh;
+  width: 30vw;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 7px;
+}
+#button {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 30vw;
+}
+
+.your-class::-webkit-input-placeholder {
+  color: red;
+}
