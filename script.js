@@ -4,6 +4,25 @@ const numberV = document.querySelector("#number");
 const button = document.querySelector("#button");
 const table = document.querySelector("#table");
 
+//funkcija, kas pārbauda, vai lauki aizpildīti
+const check = function () {
+  if (nameV.value === "") {
+    nameV.style.borderColor = "red";
+  } else {
+    nameV.style.borderColor = "green";
+  }
+  if (surnameV.value === "") {
+    surnameV.style.borderColor = "red";
+  } else {
+    surnameV.style.borderColor = "green";
+  }
+  if (numberV.value === "") {
+    numberV.style.borderColor = "red";
+  } else {
+    numberV.style.borderColor = "green";
+  }
+};
+
 //funkcija, kas ielādē programmu.
 const load = async () => {
   table.innerHTML = "";
@@ -67,6 +86,7 @@ const deleteF = (value) => {
 };
 
 button.addEventListener("click", () => {
+  check();
   send();
   load();
 });
