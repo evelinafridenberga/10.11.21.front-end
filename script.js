@@ -33,7 +33,7 @@ const load = async () => {
   surnameV.value = "";
   table.innerHTML =
     "<tr><th>Name</th><th>Surname</th><th>Phone</th><th>Delete</th></tr>";
-  fetch("http://127.0.0.1:3000")
+  fetch("https://eft-phonebook.herokuapp.com/")
     .then((res) => res.json())
     .then((res) =>
       res.phone.map((e) => {
@@ -53,7 +53,7 @@ const load = async () => {
 load();
 //funkcija, kas datus nosūta uz DB
 const send = () => {
-  fetch("http://127.0.0.1:3000", {
+  fetch("https://eft-phonebook.herokuapp.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const send = () => {
 
 //FUnkcija, kas dzēš elementu
 const deleteF = (value) => {
-  fetch(`http://127.0.0.1:3000/${value}`, {
+  fetch(`https://eft-phonebook.herokuapp.com/${value}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
