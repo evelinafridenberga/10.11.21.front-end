@@ -53,6 +53,7 @@ const load = async () => {
 load();
 //funkcija, kas datus nosūta uz DB
 const send = () => {
+  if (numberV.value.length != 8) return alert("Number is not valid");
   fetch("https://eft-phonebook.herokuapp.com/", {
     method: "POST",
     headers: {
